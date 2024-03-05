@@ -11,6 +11,7 @@
   "dependencies": {
     "@nextui-org/link": "^2.0.26",
     "@nextui-org/react": "^2.2.10",
+    "@nextui-org/snippet": "^2.0.31",
     "@nextui-org/theme": "^2.1.18",
     "@react-aria/visually-hidden": "^3.8.10",
     "@types/node": "20.5.7",
