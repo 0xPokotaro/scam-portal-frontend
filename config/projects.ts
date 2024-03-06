@@ -14,7 +14,7 @@ export const projects: Project[] = [
     categories: ['DeFi'],
     chains: ['Ethereum'],
     notion:
-      'https://ruckplus.notion.site/0XLSD-d73b1aaa14ea4dc187a3e64a5a56b418?pvs=4',
+      'https://ruckplus.notion.site/0XLSD-b5ef6c3672dd44428cec19c191d4b9a6?pvs=4',
     updatedAt: new Date('2024-03-06'),
   },
   {
@@ -23,7 +23,16 @@ export const projects: Project[] = [
     categories: ['DEX'],
     chains: ['Ethereum', 'BSC'],
     notion:
-      'https://ruckplus.notion.site/KoiTrading-f29b4b8512a94a449706a526649b63ef?pvs=4',
+      'https://ruckplus.notion.site/KoiTrading-4c4faf9e5a244287b580e456313e1b4f?pvs=4',
     updatedAt: new Date('2024-03-06'),
   },
+  {
+    id: 3,
+    name: 'Data Ownership Protocol',
+    categories: ['ZKP'],
+    chains: ['Ethereum'],
+    notion:
+      'https://ruckplus.notion.site/DataOwnershipProtocol-6785aab4dee04414963e642720307070?pvs=4',
+    updatedAt: new Date('2024-03-06'),
+  }
 ]
