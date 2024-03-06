@@ -13,6 +13,10 @@ export const ProjectCard = (props: ProjectCardProps) => {
   const [project, setProject] = useState<Project>()
   const [updatedAt, setUpdatedAt] = useState<string>()
 
+  const gotoNotion = (url: string) => {
+    window.open(url, '_blank')
+  }
+
   useEffect(() => {
     if (props.project) {
       setProject(props.project)
@@ -44,7 +48,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         </p>
       </CardBody>
       <CardFooter>
-        <Button color="primary" radius="full" fullWidth variant="flat">詳細</Button>
+        <Button color="primary" radius="full" fullWidth variant="flat" onClick={() => gotoNotion(project?.notion || '#')} target="_blank">詳細</Button>
       </CardFooter>
     </Card>
   )
