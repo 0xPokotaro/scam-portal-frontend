@@ -12,7 +12,7 @@ export const ProjectCardList = (props: ProjectCardListProps) => {
 
   return (
     <>
-      {projects.reverse().map((project) => (
+      {[...projects].reverse().map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
     </>

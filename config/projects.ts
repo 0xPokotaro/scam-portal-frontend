@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    name: 'KoiTrading',
+    name: 'Koi Trading',
     categories: ['DEX'],
     chains: ['Ethereum', 'BSC'],
     notion:
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'Data Ownership Protocol',
+    name: 'DOP',
     categories: ['ZKP'],
     chains: ['Ethereum'],
     notion:
