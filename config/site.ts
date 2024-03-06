@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: 'Next.js + NextUI',
+  name: '暗号資産の詐欺情報サイト',
   description: 'Make beautiful websites regardless of your design experience.',
   navItems: [
     {

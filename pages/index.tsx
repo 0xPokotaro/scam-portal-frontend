@@ -12,46 +12,18 @@ export default function IndexPage() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title()}>Make&nbsp;</h1>
-          <h1 className={title({ color: 'violet' })}>beautiful&nbsp;</h1>
+          <h1 className={title()}>暗号資産</h1>
           <br />
           <h1 className={title()}>
-            websites regardless of your design experience.
+            詐欺情報サイト
           </h1>
           <h4 className={subtitle({ class: 'mt-4' })}>
-            Beautiful, fast and modern React UI library.
+            暗号資産に関する案件情報を共有するサイトです。
           </h4>
         </div>
 
-        <div className="flex gap-3">
-          <Link
-            isExternal
-            href={siteConfig.links.docs}
-            className={buttonStyles({
-              color: 'primary',
-              radius: 'full',
-              variant: 'shadow',
-            })}
-          >
-            Documentation
-          </Link>
-          <Link
-            isExternal
-            className={buttonStyles({ variant: 'bordered', radius: 'full' })}
-            href={siteConfig.links.github}
-          >
-            <GithubIcon size={20} />
-            GitHub
-          </Link>
-        </div>
-
         <div className="mt-8">
-          <Snippet hideSymbol hideCopyButton variant="bordered">
-            <span>
-              Get started by editing{' '}
-              <Code color="primary">pages/index.tsx</Code>
-            </span>
-          </Snippet>
+          <p>作成中</p> 
         </div>
       </section>
     </DefaultLayout>
