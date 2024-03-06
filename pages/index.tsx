@@ -1,8 +1,8 @@
 import { title, subtitle } from '@/components/primitives'
 import DefaultLayout from '@/layouts/default'
 import { projects } from '@/config/projects'
-import { ProjectTable } from '@/components/project-table'
 import { siteConfig } from '@/config/site'
+import { ProjectCardList } from '@/components/project-card-list'
 
 export default function IndexPage() {
   return (
@@ -17,8 +17,8 @@ export default function IndexPage() {
           </h4>
         </div>
 
-        <div className="mt-8">
-          <ProjectTable projects={projects} />
+        <div>
+          <ProjectCardList projects={projects} />
         </div>
       </section>
     </DefaultLayout>

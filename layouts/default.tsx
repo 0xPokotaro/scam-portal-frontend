@@ -1,12 +1,20 @@
+import { useState, useEffect } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Link } from '@nextui-org/link'
 import { Head } from './head'
+import dayjs from 'dayjs'
 
 export default function DefaultLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const [year, setYear] = useState('')
+
+  useEffect(() => {
+    setYear(dayjs().format('YYYY'))
+  }, [])
+
   return (
     <div className="relative flex flex-col h-screen">
       <Head />
@@ -18,11 +26,11 @@ export default function DefaultLayout({
         <Link
           isExternal
           className="flex items-center gap-1 text-current"
-          href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-          title="nextui.org homepage"
+          href="https://twitter.com/0xpokotaro"
+          title="X - 0xpokotaro"
         >
-          <span className="text-default-600">Powered by</span>
-          <p className="text-primary">NextUI</p>
+          <span className="text-default-600">&copy;</span>
+          <p className="text-primary">{year} 0xpokotaro</p>
         </Link>
       </footer>
     </div>

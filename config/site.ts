@@ -7,7 +7,7 @@ export const siteConfig = {
   navMenuItems: [],
   links: {
     github: 'https://github.com/nextui-org/nextui',
-    twitter: 'https://twitter.com/getnextui',
+    twitter: 'https://twitter.com/0xpokotaro',
     docs: 'https://nextui-docs-v2.vercel.app',
     discord: 'https://discord.gg/9b6yyZKmH4',
     sponsor: 'https://patreon.com/jrgarciadev',
