@@ -2,6 +2,7 @@ import { title, subtitle } from '@/components/primitives'
 import DefaultLayout from '@/layouts/default'
 import { projects } from '@/config/projects'
 import { ProjectTable } from '@/components/project-table'
+import { siteConfig } from '@/config/site'
 
 export default function IndexPage() {
   return (
@@ -10,11 +11,9 @@ export default function IndexPage() {
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>暗号資産</h1>
           <br />
-          <h1 className={title()}>
-            闇プロジェクトまとめ
-          </h1>
+          <h1 className={title()}>闇プロジェクトまとめ</h1>
           <h4 className={subtitle({ class: 'mt-4' })}>
-            暗号資産に関する案件情報を共有するサイトです。
+            {siteConfig.description}
           </h4>
         </div>
 

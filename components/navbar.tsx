@@ -18,11 +18,7 @@ import NextLink from 'next/link'
 import clsx from 'clsx'
 
 import { ThemeSwitch } from '@/components/theme-switch'
-import {
-  TwitterIcon,
-  GithubIcon,
-  SearchIcon,
-} from '@/components/icons'
+import { TwitterIcon, GithubIcon, SearchIcon } from '@/components/icons'
 
 export const Navbar = () => {
   const searchInput = (
@@ -54,6 +50,7 @@ export const Navbar = () => {
             <p className="font-bold text-inherit">暗号資産の詐欺情報サイト</p>
           </NextLink>
         </NavbarBrand>
+        {/*
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
@@ -70,6 +67,7 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </div>
+         */}
       </NavbarContent>
 
       <NavbarContent
@@ -85,8 +83,8 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+        <Link isExternal href={siteConfig.links.twitter}>
+          <TwitterIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
