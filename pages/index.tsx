@@ -11,13 +11,13 @@ export default function IndexPage() {
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>暗号資産</h1>
           <br />
-          <h1 className={title()}>闇プロジェクトまとめ</h1>
+          <h1 className={title()}>闇プロジェクト</h1>
           <h4 className={subtitle({ class: 'mt-4' })}>
             {siteConfig.description}
           </h4>
         </div>
 
-        <div>
+        <div className="w-full md:w-1/3">
           <ProjectCardList projects={projects} />
         </div>
       </section>
