@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: '暗号資産の詐欺情報サイト',
+  name: '暗号資産の闇プロジェクトまとめ',
   description: 'Make beautiful websites regardless of your design experience.',
   navItems: [
     {

@@ -1,11 +1,7 @@
-import { Link } from '@nextui-org/link'
-import { Snippet } from '@nextui-org/snippet'
-import { Code } from '@nextui-org/code'
-import { button as buttonStyles } from '@nextui-org/theme'
-import { siteConfig } from '@/config/site'
 import { title, subtitle } from '@/components/primitives'
-import { GithubIcon } from '@/components/icons'
 import DefaultLayout from '@/layouts/default'
+import { Button, Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from '@nextui-org/react'
+import { projects } from '@/config/projects'
 
 export default function IndexPage() {
   return (
@@ -15,7 +11,7 @@ export default function IndexPage() {
           <h1 className={title()}>暗号資産</h1>
           <br />
           <h1 className={title()}>
-            詐欺情報サイト
+            闇プロジェクトまとめ
           </h1>
           <h4 className={subtitle({ class: 'mt-4' })}>
             暗号資産に関する案件情報を共有するサイトです。
@@ -23,7 +19,24 @@ export default function IndexPage() {
         </div>
 
         <div className="mt-8">
-          <p>作成中</p> 
+          <Table>
+            <TableHeader>
+              <TableColumn>プロジェクト名</TableColumn>
+              <TableColumn>内容</TableColumn>
+              <TableColumn>詳細</TableColumn>
+            </TableHeader>
+            <TableBody>
+              {projects.map((project) => (
+                <TableRow key={project.id}>
+                  <TableCell>{project.name}</TableCell>
+                  <TableCell>ほげほげ</TableCell>
+                  <TableCell>
+                    <Button color="primary" size="sm">詳細</Button>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
       </section>
     </DefaultLayout>
